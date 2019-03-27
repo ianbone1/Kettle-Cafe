@@ -1,6 +1,6 @@
 package Cafe;
 
-public interface ICanSell {
+public interface ICanBuy {
 
     String sell();
 

@@ -1,9 +1,9 @@
 package Cafe.Food;
 
-import Cafe.ICanSell;
+import Cafe.ICanBuy;
 import Cafe.MenuItem;
 
-public class Sandwich extends MenuItem implements ICanSell {
+public class Sandwich extends MenuItem implements ICanBuy {
 
     private boolean glutenFree;
 

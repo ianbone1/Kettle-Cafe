@@ -1,9 +1,9 @@
 package Cafe.Drink;
 
-import Cafe.ICanSell;
+import Cafe.ICanBuy;
 import Cafe.MenuItem;
 
-public class Drink extends MenuItem implements ICanSell {
+public class Drink extends MenuItem implements ICanBuy {
 
     private boolean containsAlcohol;
 

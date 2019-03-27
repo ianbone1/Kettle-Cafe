@@ -9,8 +9,8 @@ import static org.junit.Assert.assertEquals;
 public class CustomerTest {
 
     private Customer cust;
-    Drink softDrink;
-    Drink wineDrink;
+    private Drink softDrink;
+    private Drink wineDrink;
     private Sandwich blt;
 
     @Before

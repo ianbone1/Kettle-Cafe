@@ -1,20 +1,18 @@
 package Cafe;
 
-import Cafe.Drink.Drink;
-
 import java.util.ArrayList;
 
 public class Customer {
     private String name;
     private int age;
     private double money;
-    private ArrayList<ICanSell> purchases;
+    private ArrayList<ICanBuy> purchases;
 
     public Customer(String name, int age, double money) {
         this.name = name;
         this.age = age;
         this.money = money;
-        this.purchases = new ArrayList<ICanSell>();
+        this.purchases = new ArrayList<ICanBuy>();
     }
 
     public String getName() {
@@ -37,7 +35,7 @@ public class Customer {
         return false;
     }
 
-    public boolean buy(ICanSell menuItem){
+    public boolean buy(ICanBuy menuItem){
         if (this.debit(menuItem.cost())){
             this.purchases.add(menuItem);
             return true;
